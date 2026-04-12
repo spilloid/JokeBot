@@ -1,13 +1,13 @@
-name: Deploy to Docker Compose
+name: CD
+
 on:
   push:
-    branches:
-      - main
+    branches: [main]
+
 jobs:
   deploy:
     runs-on: self-hosted
     steps:
-    - name: Checkout repository
-      uses: actions/checkout@v3.3.0
-    - name: Start Docker Compose
-      run: docker compose up -d
+      - uses: actions/checkout@v4
+      - name: Deploy with Docker Compose
+        run: docker compose up -d --build
