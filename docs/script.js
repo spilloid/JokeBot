@@ -6,18 +6,17 @@ const cheatJoke = document.querySelector("#cheatJoke");
 const confettiField = document.querySelector("#confettiField");
 
 const jokes = [
-  "I only know 9 jokes, but I deploy with confidence.",
-  "My Flask app walked into a bar. The bartender said, 'Nice endpoint.'",
-  "I asked Docker for a dad joke. It said, 'Let me contain myself.'",
-  "The API wanted a raise, but it only returns change randomly.",
-  "My health check says ok, which is more validation than I get from my tests.",
-  "I made a joke bot in Python. It has great pip personality.",
-  "This site is mostly CSS because the backend is busy choosing between 9 punchlines.",
-  "I told my route to be funny. It said JSON me the club.",
-  "The server had a midlife crisis, so I gave it a status code.",
-  "My CI passed, but the joke still needs approval from the dad board.",
-  "A one-endpoint app wearing a hero section is technically formalwear.",
-  "I named the container JokeBot because Punicorn was already emotionally taken."
+  "Why don't scientists trust atoms? Because they make up everything.",
+  "I told my wife she was drawing her eyebrows too high. She looked surprised.",
+  "Why can't you give Elsa a balloon? Because she'll let it go.",
+  "I'm reading a book about anti-gravity. It's impossible to put down.",
+  "Did you hear about the guy who invented Lifesavers? He made a mint.",
+  "Did you hear about the award the scarecrow recieved? he was outstanding in his field!",
+  "I used to hate facial hair, but then it grew on me.",
+  "What do you call a fake noodle? An impasta.",
+  "I told my doctor I broke my arm in two places. He told me to stop going to those places.",
+  "Why did the bicycle fall over? Because it was two-tired.",
+  "Why did the crow get an award? Because he was out standing in his field."
 ];
 
 const cheatJokes = [
