@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta
+      name="description"
+      content="JokeBot is a tiny Flask API with an aggressively overbuilt brand website."
+    >
+    <title>JokeBot | I only know 9 jokes, but I deploy with confidence.</title>
+    <link rel="preload" href="assets/jokebot-hero.png" as="image">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <div class="page-shell" id="top">
+      <header class="site-header" aria-label="Primary">
+        <a class="brand-mark" href="#top" aria-label="JokeBot home">
+          <span class="brand-icon" aria-hidden="true">JB</span>
+          <span>JokeBot</span>
+        </a>
+        <nav class="nav-links" aria-label="Page sections">
+          <a href="#api">API</a>
+          <a href="#stack">Stack</a>
+          <a href="#receipts">Receipts</a>
+        </nav>
+      </header>
+
+      <main>
+        <section class="hero" aria-labelledby="hero-title">
+          <div class="hero-copy">
+            <p class="eyebrow">Flask API. Docker fit. Dad-joke menace.</p>
+            <button class="title-joke" id="titleJoke" type="button" aria-live="polite">
+              <span class="title-kicker">JokeBot</span>
+              <span class="title-line" id="titleLine">I only know 9 jokes, but I deploy with confidence.</span>
+            </button>
+            <h1 id="hero-title">Comedy infrastructure for the tragically over-engineered.</h1>
+            <p class="hero-text">
+              A tiny JSON endpoint dressed like it just closed a Series A. Random jokes,
+              health checks, containers, and enough swagger to make a one-route app blush.
+            </p>
+            <div class="hero-actions" aria-label="Primary actions">
+              <a class="button primary" href="#api">Inspect the API</a>
+              <a class="button ghost" href="https://github.com/jdspille/JokeBot">View repo</a>
+            </div>
+          </div>
+
+          <div class="hero-stage" aria-label="JokeBot hero artwork">
+            <img src="assets/jokebot-hero.png" alt="A glossy futuristic joke machine surrounded by neon UI panels.">
+            <div class="ticket ticket-one" aria-hidden="true">200 OK</div>
+            <div class="ticket ticket-two" aria-hidden="true">PUNS++</div>
+            <div class="ticket ticket-three" aria-hidden="true">/health</div>
+          </div>
+        </section>
+
+        <section class="ticker" aria-label="Joke stream">
+          <div class="ticker-track">
+            <span>dark mode attracts bugs</span>
+            <span>atoms make up everything</span>
+            <span>shellfish oysters</span>
+            <span>silent P</span>
+            <span>receding hare-line</span>
+            <span>frostbite</span>
+            <span>dark mode attracts bugs</span>
+            <span>atoms make up everything</span>
+            <span>shellfish oysters</span>
+            <span>silent P</span>
+            <span>receding hare-line</span>
+            <span>frostbite</span>
+          </div>
+        </section>
+
+        <section class="split-section" id="api">
+          <div>
+            <p class="section-label">The Product</p>
+            <h2>One endpoint. Infinite confidence.</h2>
+            <p>
+              JokeBot ships a random dad joke as JSON and then has the audacity
+              to include CI, Docker, gunicorn, and a production-shaped heartbeat.
+            </p>
+          </div>
+
+          <div class="terminal-card" aria-label="Example API response">
+            <div class="terminal-bar">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+            <pre><code>curl https://example.com/
+
+{
+  "joke": "Why don't scientists trust atoms? Because they make up everything."
+}</code></pre>
+          </div>
+        </section>
+
+        <section class="feature-grid" id="stack" aria-label="JokeBot stack">
+          <article>
+            <span class="feature-index">01</span>
+            <h3>Flask Core</h3>
+            <p>Small enough to understand before your coffee cools. Sharp enough to answer fast.</p>
+          </article>
+          <article>
+            <span class="feature-index">02</span>
+            <h3>Docker Swagger</h3>
+            <p>Containerized with gunicorn and a non-root user, because even silly deserves manners.</p>
+          </article>
+          <article>
+            <span class="feature-index">03</span>
+            <h3>Health Check</h3>
+            <p>The app can confirm it is alive, which is more than most punchlines can do.</p>
+          </article>
+        </section>
+
+        <section class="receipt-wall" id="receipts">
+          <div class="receipt-copy">
+            <p class="section-label">Portfolio Energy</p>
+            <h2>A premium launch page for a deeply unserious microservice.</h2>
+            <p>
+              The assignment was random jokes. The response was brand strategy,
+              kinetic typography, and a cheat code hiding in plain sight.
+            </p>
+          </div>
+
+          <div class="receipt-stack" aria-label="Project receipts">
+            <div class="receipt-card hot">
+              <span>Latency</span>
+              <strong>blink-speed</strong>
+            </div>
+            <div class="receipt-card cool">
+              <span>Dad energy</span>
+              <strong>certified</strong>
+            </div>
+            <div class="receipt-card lime">
+              <span>Scope control</span>
+              <strong>absolutely not</strong>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <aside class="cheat-panel" id="cheatPanel" aria-live="polite" aria-label="Cheat mode status">
+      <div class="cheat-window">
+        <span class="cheat-tag">CHEAT UNLOCKED</span>
+        <h2>Dad Mode: Overclocked</h2>
+        <p id="cheatJoke">I asked my API for a joke. It gave me a status code and emotional support.</p>
+        <button id="closeCheat" type="button">Keep shipping</button>
+      </div>
+    </aside>
+
+    <div class="confetti-field" id="confettiField" aria-hidden="true"></div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
